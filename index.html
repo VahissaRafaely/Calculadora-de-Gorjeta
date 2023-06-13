@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Gorjeta</title>
+</head>
+
+<body>
+    <div class="caixa">
+    <main>
+        <header>
+        <div class="container"></div>   
+        <h2>Calculadora de Gorjeta</h2>
+        </header>
+<section>
+<br><div class="input-group">     
+<label for="total">Qual valor do jantar?</label>  
+<input type="number" id="total" step="0.01" placeholder="valor do jantar">
+</div>
+</section>
+
+<br><div class="input-group">    
+<label for="service">Quanto é a taxa de serviço?</label>    
+<select id="service"> 
+<option value="0.3">Incrível - 30%</option>
+<option value="0.2">Ótimo - 20%</option>
+<option value="0.15">Bom - 15%</option> 
+<option value="0.1">Aceitável - 10%</option>   
+<option value="0.05">Ruim - 5%</option>    
+</select>
+</div>
+  
+<br><section>
+<div class="input-group">  
+<label for="people">Quantas pessoas vão pagar a conta?:</label>     
+<input type="number" id="people" min="1">  
+</div>
+</section>
+
+<br><button onclick="calculateTip()">Calcular</button>
+<div id="result"></div>
+
+<script src="index.js"></script>
+</main>
+</div>
+</body>
+</html>
